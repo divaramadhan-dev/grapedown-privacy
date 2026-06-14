@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrapeDown - Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for GrapeDown Download Manager application and browser extension.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: #0a0a0f; color: #c8ccd4; line-height: 1.7; min-height: 100vh; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at 20% 0%, rgba(88, 28, 135, 0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 100%, rgba(59, 7, 100, 0.12) 0%, transparent 60%); pointer-events: none; z-index: 0; }
+        header { position: relative; z-index: 1; padding: 2rem 1.5rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.06); backdrop-filter: blur(20px); background: rgba(10, 10, 15, 0.7); }
+        .logo-container { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+        .logo-icon { font-size: 2rem; }
+        .logo-text { font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #a855f7, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        header p { color: #6b7280; font-size: 0.9rem; }
+        main { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+        h1 { font-size: 2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 0.5rem; }
+        .effective-date { color: #6b7280; font-size: 0.85rem; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+        h2 { font-size: 1.25rem; font-weight: 600; color: #e2e8f0; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; color: #94a3b8; }
+        ul { margin-bottom: 1rem; padding-left: 1.25rem; }
+        ul li { margin-bottom: 0.4rem; color: #94a3b8; }
+        ul li::marker { color: #7c3aed; }
+        .highlight-card { background: rgba(124, 58, 237, 0.08); border: 1px solid rgba(124, 58, 237, 0.15); border-radius: 12px; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+        .highlight-card p { color: #c4b5fd; margin-bottom: 0; font-weight: 500; }
+        strong { color: #e2e8f0; font-weight: 600; }
+        a { color: #a78bfa; text-decoration: none; }
+        a:hover { color: #c4b5fd; text-decoration: underline; }
+        footer { position: relative; z-index: 1; text-align: center; padding: 2rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.06); color: #4b5563; font-size: 0.8rem; }
+        @media (max-width: 640px) { h1 { font-size: 1.5rem; } main { padding: 1.5rem 1rem 3rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="logo-icon">&#x1F347;</span>
+            <span class="logo-text">GrapeDown</span>
+        </div>
+        <p>Universal Download Manager</p>
+    </header>
+    <main>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: June 14, 2026 | Last Updated: June 14, 2026</p>
+        <div class="highlight-card">
+            <p>&#x1F512; GrapeDown does not collect, store, transmit, or share any personal data or usage information. Your privacy is fully respected.</p>
+        </div>
+        <h2>Overview</h2>
+        <p>GrapeDown is a desktop download manager application for Windows, accompanied by an optional browser extension for Microsoft Edge and Google Chrome. This privacy policy explains how GrapeDown handles your data across both the desktop application and the browser extension.</p>
+        <h2>Data We Collect</h2>
+        <p><strong>We do not collect any data.</strong> Specifically:</p>
+        <ul>
+            <li>No personal information (name, email, phone, etc.)</li>
+            <li>No usage analytics or telemetry</li>
+            <li>No download history or browsing activity</li>
+            <li>No crash reports sent to external servers</li>
+            <li>No cookies or tracking identifiers</li>
+        </ul>
+        <h2>Network Communications</h2>
+        <p>GrapeDown communicates over the internet solely for the following purposes:</p>
+        <ul>
+            <li><strong>Downloading files:</strong> The application connects to URLs provided by the user to download files. These connections are made directly to the file hosting servers.</li>
+            <li><strong>Torrent downloads:</strong> When downloading via magnet links or .torrent files, the application communicates with BitTorrent DHT routers and peers.</li>
+            <li><strong>Local communication:</strong> The browser extension communicates with the desktop application via a local HTTP server on 127.0.0.1 (localhost). This never leaves your computer.</li>
+        </ul>
+        <h2>Browser Extension</h2>
+        <p>The GrapeDown browser extension requires the following permissions:</p>
+        <ul>
+            <li><strong>downloads:</strong> To intercept browser downloads and route them to the GrapeDown desktop application.</li>
+            <li><strong>activeTab / scripting:</strong> To detect video elements on web pages and display a download button overlay.</li>
+            <li><strong>host_permissions:</strong> Required to intercept download links from any website. No browsing data is collected or transmitted.</li>
+        </ul>
+        <p>The extension only sends download URLs to the local GrapeDown desktop application. No data is sent to any external server.</p>
+        <h2>Data Storage</h2>
+        <p>All data generated by GrapeDown is stored <strong>locally on your computer</strong>:</p>
+        <ul>
+            <li><strong>Downloaded files:</strong> Saved to the folder you choose for each download.</li>
+            <li><strong>Temporary chunk files:</strong> Created during multi-threaded downloads and automatically deleted upon completion.</li>
+            <li><strong>Error logs:</strong> Stored locally in the application directory for debugging purposes. Never transmitted externally.</li>
+        </ul>
+        <h2>Children's Privacy</h2>
+        <p>GrapeDown does not knowingly collect any information from children under the age of 13. Since the application collects no personal data, it is inherently compliant with children's privacy regulations.</p>
+        <h2>Third-Party Services</h2>
+        <p>GrapeDown does not integrate with any third-party analytics, advertising, or tracking services.</p>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last Updated" date at the top of this page.</p>
+        <h2>Contact</h2>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:divaramasenju@outlook.com">divaramasenju@outlook.com</a></p>
+        <div class="highlight-card">
+            <p>&#x2705; Thank you for using GrapeDown. We are committed to protecting your privacy and providing a safe, transparent download experience.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 DivaRamadhan_Dev. All rights reserved.</p>
+    </footer>
+</body>
+</html>
